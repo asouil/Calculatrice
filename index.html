@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Petite calculatrice</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div class="container d-flex justify-content-center">
+			<div class="flex-row">
+				<div id="calculator">
+					<div id="affichage" class="col-12">0</div>
+
+					<div id="pad0" class="col-12 d-flex">
+						<div class="custom-btn" onclick="reset()"><p>C</p></div>
+						<div class="custom-btn" onclick="nbPad('(')"><p>(</p></div>
+						<div class="custom-btn" onclick="nbPad(')')"><p>)</p></div>
+						<div class="custom-btn" onclick="operator('/')"><p>/</p></div>
+					</div>
+
+					<div id="pad1" class="col-12 d-flex">
+						<div class="custom-btn" onclick="nbPad('7')"><p>7</p></div>
+						<div class="custom-btn" onclick="nbPad('8')"><p>8</p></div>
+						<div class="custom-btn" onclick="nbPad('9')"><p>9</p></div>
+						<div class="custom-btn" onclick="operator('+')"><p>+</p></div>
+					</div>
+
+					<div id="pad2" class="col-12 d-flex">
+						<div class="custom-btn" onclick="nbPad('4')"><p>4</p></div>
+						<div class="custom-btn" onclick="nbPad('5')"><p>5</p></div>
+						<div class="custom-btn" onclick="nbPad('6')"><p>6</p></div>
+						<div class="custom-btn" onclick="operator('*')"><p>x</p></div>
+					</div>
+
+					<div id="pad3" class="col-12 d-flex">
+						<div class="custom-btn" onclick="nbPad('1')"><p>1</p></div>
+						<div class="custom-btn" onclick="nbPad('2')"><p>2</p></div>
+						<div class="custom-btn" onclick="nbPad('3')"><p>3</p></div>
+						<div class="custom-btn" onclick="operator('-')"><p>-</p></div>
+					</div>
+
+					<div id="pad4" class="col-12 d-flex justify-content-end">
+						<div class="custom-btn" onclick="back()"><p>CE</p></div>
+						<div class="custom-btn" onclick="nbPad('0')"><p>0</p></div>
+						<div class="custom-btn" onclick="nbPad('.')"><p>.</p></div>
+						<div class="custom-btn" id="equal" onclick="equal()"><p>=</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
