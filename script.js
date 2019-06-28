@@ -6,7 +6,7 @@ function affichage(input) {
 	document.getElementById('affichage').innerHTML = input;
 }
 
-function nbPad(nb) {
+function chiffre(nb) {
 	if(result!=="") {
 		reset();
 	}
