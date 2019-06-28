@@ -29,7 +29,7 @@ function chiffre(nb) {
 
 function operator(op) {
 	if (input === '') {
-		nbPad('0');
+		chiffre('0');
 	}
 	if (result!=='') {
 		input = result;
