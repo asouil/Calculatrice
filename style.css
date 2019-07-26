@@ -16,12 +16,14 @@ p {
 	border: solid black 1px;
 	padding: 1.2em;
 	box-shadow: 3px 5px #808080;
+	background-color: #87CEEB;
 	background: url(nuageux.jpg);
 }
 
 #affichage {
 	
 	display: flex;
+	width: 17em;
 	justify-content: flex-end;
 	border-radius: 15%;
 	-webkit-border-radius: 5;
