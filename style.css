@@ -35,6 +35,9 @@ p {
 	padding: 0.5em 1em;
 	border: solid black 1px;
 	text-decoration: none;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align:right;
 }
 
 .custom-btn {
